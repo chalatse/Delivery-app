@@ -1,11 +1,7 @@
 from fastapi import APIRouter
 
-auth_router = APIRouter(
-    prefix='/auth',
-    tags=['auth']
-)
+auth_router = APIRouter()
 
-@auth_router.get('/')
+@auth_router.get('/auth')
 async def hello():
-    return {"message": "Lerato"}
-
+    return{"Hello":"auth router is UP"}

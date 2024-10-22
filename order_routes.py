@@ -1,10 +1,8 @@
 from fastapi import APIRouter
 
-order_router = APIRouter(
-    prefix='/order',
-    tags=['order']
-)
+order_router = APIRouter()
 
-@order_router.get('/')
-async def hello():
-    return {"message": "order_route is available"}
+@order_router.get('/order')
+async def root():
+    return {"Hello":"The oder router is UP"}
+
