@@ -1,7 +1,10 @@
 {
     "cSpell.words": [
-        "signup",
         "fastapi",
+        "jdbc",
+        "sessionmaker",
+        "signup",
+        "sqlalchemy",
         "uvicorn"
     ]
 }
